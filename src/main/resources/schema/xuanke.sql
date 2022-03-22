@@ -222,7 +222,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (17152135,'伲明','男',17051325,'计算机学院','软件工程',2017,'21132a532f3d0c43be0e76b942d502a9','yhhbysl'),(17252135,'楠楠','女',17053142,'管理学院','人力资源',2018,'21132a532f3d0c43be0e76b942d502a9','yhhbysl');
+INSERT INTO `student` VALUES (17152135,'伲明','男',17051325,'计算机学院','软件工程',2017,'83d2d45b622c9267939b4f607cc1b188','yhhbysl'),(17252136,'楠楠','女',17053142,'管理学院','人力资源',2018,'83d2d45b622c9267939b4f607cc1b188','yhhbysl');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
