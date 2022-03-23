@@ -151,6 +151,8 @@
 
                                     if(dto.success){
                                         alert(dto.data);
+                                        //重新加载页面
+                                        location.href = "/choose/elective/list?pageNum=0";
                                     }else{
                                         alert(dto.errMsg);
                                     }

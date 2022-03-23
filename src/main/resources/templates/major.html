@@ -95,12 +95,12 @@
                                         <li><a class="btn btn-default btn-lg active" href="#" >1</a></li>-->
 
                                         <li>
-                                            <a th:if="${detail.number != (detail.totalPages-1)}" th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum=' + ${detail.number + 1}}" th:text="下一页"></a>
+                                            <a th:if="${detail.number != (detail.totalPages - 1)}" th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum=' + ${detail.number + 1}}" th:text="下一页"></a>
                                         </li>
                                         <li>
-                                            <a th:if="${detail.number == (detail.totalPages-1)}" th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum=' + ${detail.totalPages - 1}}" th:text="下一页"></a>
+                                            <a th:if="${detail.number == (detail.totalPages - 1)}" th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum=' + ${detail.totalPages - 1}}" th:text="下一页"></a>
                                         </li>
-                                        <li><a th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum='+ ${detail.totalPages==0? 0: detail.totalPages-1 } }" >尾页</a></li>
+                                        <li><a th:href="@{'/clazz/detail?cno='+${cno}+'&pageNum='+ ${detail.totalPages==0? 0: (detail.totalPages - 1) } }" >尾页</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -158,6 +158,8 @@
 
                                     if(dto.success){
                                         alert(dto.data);
+                                        //重新加载页面
+                                        location.reload();
                                     }else{
                                         alert(dto.errMsg);
                                     }
@@ -174,7 +176,7 @@
 
             } else {
                 //刷新，得到最新的课程余量
-                // location.reload();
+                location.reload();
             }
 
 
