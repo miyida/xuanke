@@ -1,5 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.22, for osx10.15 (x86_64)
---
+
 -- Host: 127.0.0.1    Database: xuanke
 -- ------------------------------------------------------
 -- Server version	8.0.17
@@ -28,7 +27,7 @@ CREATE TABLE `choosetime` (
   `end_time` timestamp NULL DEFAULT NULL,
   `tid` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`tid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -59,7 +58,7 @@ CREATE TABLE `clazz` (
   `naturecode` int(2) DEFAULT NULL,
   `college` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`cno`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +91,7 @@ CREATE TABLE `grade` (
   `chongxiu` varchar(4) DEFAULT NULL,
   `sno` int(11) DEFAULT NULL,
   PRIMARY KEY (`gno`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +122,7 @@ CREATE TABLE `kaoshi` (
   `seat` int(11) DEFAULT NULL,
   `sno` int(11) DEFAULT NULL,
   PRIMARY KEY (`kno`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -158,7 +157,7 @@ CREATE TABLE `plan` (
   `capacity` int(3) DEFAULT NULL,
   `num` int(3) DEFAULT NULL,
   PRIMARY KEY (`pno`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +182,7 @@ CREATE TABLE `result` (
   `sno` int(11) NOT NULL,
   `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`pno`,`sno`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -213,7 +212,7 @@ CREATE TABLE `student` (
   `password` varchar(100) DEFAULT NULL,
   `salt` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`sno`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,4 +234,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-22 11:53:39
